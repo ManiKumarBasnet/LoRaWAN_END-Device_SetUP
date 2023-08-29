@@ -24,6 +24,15 @@ LoRaWAN (Long Range Wide Area Network) is a low-power wireless communication pro
 This project involves the following components:
 
 - **End Device:** The IoT device that collects or generates data to be transmitted over the LoRaWAN network.
+    1. Arduino MKR WAN 1300:
+    ![Alt text](R.jpeg)
+    **Specification:**
+        - SAMD21 Cortex-M0+ 32bit low power ARM MCU 48 MHz
+        - CMWX1ZZABZ LoRa Module
+        - Screw terminals for battery
+        - 2dB Antenna Power
+        - Carrier frequency: 433/868/915 MHz
+
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
 

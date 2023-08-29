@@ -35,8 +35,8 @@ This project involves the following components:
         - Carrier frequency: 433/868/915 MHz
         - I/O pin current: 7mA
         - 5V pin current: Battery/USB dependent
-        - 3.3V pin current: Battery dependent, 600mA from USB 
-    
+        - 3.3V pin current: Battery dependent, 600mA from USB <br>
+    <br>
     2. Arduino MKR ENV Shield:
     
        ![Alt text](ENV_Shield_REV2.jpeg)
@@ -45,8 +45,8 @@ This project involves the following components:
        - Atmospheric pressure sensor
        - Temperature and humidity sensor
        - Light intensity (in LUX)
-       - Slot for a microSD card
-
+       - Slot for a microSD card<br>
+<br>
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
 
@@ -73,10 +73,19 @@ Before you begin, make sure you have the following:
 4. **Gateway Integration:** Integrate the gateway with the server using provided instructions.
 
 ## Programming the End Device
+Make sure to update the firmware of the LoRa module to the latest version.
+Procedure:
 
-1. **Select a Development Board:** Choose a development board compatible with your LoRaWAN network (e.g., Arduino with LoRa module).
-2. **End Device Programming:** Use the Arduino IDE (or other preferred IDE) to program the end device with the appropriate LoRaWAN library.
+    File -> Examples -> MKRWAN -> MKRWANFWUpdate_standalone
+
+1. **Install the core for MKR WAN board:** The core/board provides access to the hardware features of the microcontroller. The MKR WAN 1300 uses the  **SAMD core**.
+2. **Install Libraries:** Libraries allow to extend the functionality of a sketch. Install the following libraries:
+   - Arduino_MKRENV - For the MKR ENV2 Shield.
+   - MKRWAN - For LoRaWAN network access.
+   - Arduino Low Power - For low power capability access.<br>
+<br>
 3. **Configure End Device:** Set the device address, network session key, and application session key as per your LoRaWAN server setup.
+
 4. **Data Transmission:** Write code to collect or generate data and transmit it using the LoRaWAN library.
 
 ## Troubleshooting

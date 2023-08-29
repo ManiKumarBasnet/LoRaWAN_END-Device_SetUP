@@ -41,9 +41,9 @@ This project involves the following components:
     
        ![Alt text](ENV_Shield_REV2.jpeg)
 
-       Specifications:
-       - Atmospheric pressure
-       - Temperature and humidity
+       Features:
+       - Atmospheric pressure sensor
+       - Temperature and humidity sensor
        - Light intensity (in LUX)
        - Slot for a microSD card
 

@@ -36,7 +36,7 @@ This project involves the following components:
         - 5V pin current: Battery/USB dependent
         - 3.3V pin current: Battery dependent, 600mA from USB 
     
-     2. Arduino MKR ENV Shield
+     2. Arduino MKR ENV Shield:
      
 
     ![Alt text](ENV_Shield_REV2.jpeg)

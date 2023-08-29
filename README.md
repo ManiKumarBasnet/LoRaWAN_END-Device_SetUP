@@ -25,7 +25,8 @@ This project involves the following components:
 
 - **End Device:** The IoT device that collects or generates data to be transmitted over the LoRaWAN network.
     1. Arduino MKR WAN 1300:
-    ![Alt text](R.jpeg)
+     
+       ![Alt text](R.jpeg)
     **Specification:**
         - SAMD21 Cortex-M0+ 32bit low power ARM MCU 48 MHz
         - CMWX1ZZABZ LoRa Module
@@ -36,8 +37,9 @@ This project involves the following components:
         - 5V pin current: Battery/USB dependent
         - 3.3V pin current: Battery dependent, 600mA from USB 
     
-    1.1 Arduino MKR ENV Shield
-    ![Alt text](ENV_Shield_REV2.jpeg)
+    2. Arduino MKR ENV Shield:
+    
+       ![Alt text](ENV_Shield_REV2.jpeg)
 
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.

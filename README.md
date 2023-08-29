@@ -32,6 +32,12 @@ This project involves the following components:
         - Screw terminals for battery
         - 2dB Antenna Power
         - Carrier frequency: 433/868/915 MHz
+        - I/O pin current: 7mA
+        - 5V pin current: Battery/USB dependent
+        - 3.3V pin current: Battery dependent, 600mA from USB 
+    
+     1.1 Arduino MKR ENV Shield
+         ![Alt text](ENV_Shield_REV2.jpeg)
 
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.

@@ -41,6 +41,12 @@ This project involves the following components:
     
        ![Alt text](ENV_Shield_REV2.jpeg)
 
+       Specifications:
+       - Atmospheric pressure
+       - Temperature and humidity
+       - Light intensity (in LUX)
+       - Slot for a microSD card
+
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
 

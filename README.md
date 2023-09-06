@@ -37,18 +37,14 @@ This project involves the following components:
         - 5V pin current: Battery/USB dependent
         - 3.3V pin current: Battery dependent, 600mA from USB <br>
     <br>
-    2. Arduino MKR ENV Shield:
     
-       ![Alt text](ENV_Shield_REV2.jpeg)
-
-       Features:
-       - Atmospheric pressure sensor
-       - Temperature and humidity sensor
-       - Light intensity (in LUX)
-       - Slot for a microSD card<br>
-<br>
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.
+ SenseCap Gateway
+    ![Alt text](<../SenseCap Gateway.jpeg>)
+    Arch-Specs:
+    ![Alt text](../GatewayArchSpec.png)
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
+![Alt text](../thingsNetworkServer.png)
 
 ## Prerequisites
 
@@ -60,10 +56,11 @@ Before you begin, make sure you have the following:
 
 ## Setting Up the Gateway
 
-1. **Choose a Gateway:** Select a LoRaWAN gateway that suits your project requirements.
-2. **Hardware Setup:** Follow the manufacturer's instructions to set up the hardware. Connect the gateway to your network and power source.
-3. **Gateway Software:** Install and configure gateway software, such as ChirpStack Gateway Bridge.
-4. **Gateway Configuration:** Configure the gateway with the appropriate settings, including frequency plan and LoRaWAN network server details.
+1. **Choose a Gateway:** Select a LoRaWAN gateway that suits your project requirements.In our case we have LoRaWAN Gateway from Sense Cap for things-network.
+2. **Hardware Setup:** Follow the manufacturer's instructions to set up the hardware. First you will need to connect your Gateway to your internet though you can make use of SIM or ethernet. Then you need to setup your Gateway to your network server.<br>
+> - Follow this link, to connect your Gateway to your internet:
+[Gateway-In-Your-Internet](<LoRaWAN/Quick Start for SenseCAP M2 Multi-Platfrom Gateway & Sensors.pdf>)<br>
+> - Follow this link, to configure your Gateway to your network server, either locally or globally hosted: [Gateway-In-Your-Netork-Server](<LoRaWAN/Connect M2 Multi Platform Gateway to The Things Network.pdf>)
 
 ## Configuring the Server
 
@@ -86,7 +83,15 @@ Procedure:
 <br>
 3. **Configure End Device:** Set the device address, network session key, and application session key as per your LoRaWAN server setup.
 
-4. **Data Transmission:** Write code to collect or generate data and transmit it using the LoRaWAN library.
+4. **Reading Sensor Values:** 
+    Include library: #include<Arduino_MKRENV.h>
+    Initialize the shield: ENV.begin()
+    Read the sensor values: 
+   *float temperature = ENV.readTemperature();
+    float humidity = ENV.readHumidity();
+    float pressure = ENV.readPressure();
+    float illuminance = ENV.readIlluminance();*
+    
 
 ## Troubleshooting
 

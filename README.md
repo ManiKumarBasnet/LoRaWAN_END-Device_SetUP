@@ -44,7 +44,7 @@ SenseCap Gateway:
     ![Alt text](GatewayArchSpec.png)
     
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
-![Alt text](../thingsNetworkServer.png)
+![Alt text](thingsNetworkServer.png)
 
 ## Prerequisites
 

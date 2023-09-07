@@ -24,7 +24,7 @@ This project involves the following components:
 
 - **End Device:** The IoT device that collects or generates data to be transmitted over the LoRaWAN network.
     1. Arduino MKR WAN 1300:
-       ![Alt text](MKRWAN.jpeg)
+       ![Alt text](Images/MKRWAN.jpeg)
     **Specification:**
         - SAMD21 Cortex-M0+ 32bit low power ARM MCU 48 MHz
         - CMWX1ZZABZ LoRa Module
@@ -38,12 +38,12 @@ This project involves the following components:
     
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.<br>
 SenseCap Gateway:
-    ![SenseCap Gateway](<SenseCap Gateway.jpeg>)
+    ![GateWay](<Images/SenseCap Gateway.jpeg>)
     Arch-Specs:
-    ![Alt text](GatewayArchSpec.png)
+    ![Alt text](Images/GatewayArchSpec.png)
     
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
-![Alt text](thingsNetworkServer.png)
+![Alt text](Images/thingsNetworkServer.png)
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ Before you begin, make sure you have the following:
 > - Follow this link, to configure your Gateway to your network server, either locally or globally hosted: [Gateway-In-Your-Netork-Server](<LoRaWAN/Connect M2 Multi Platform Gateway to The Things Network.pdf>)
 
 ## Programming the End Device
-![Circuit](MKRandAntenna.png)<br>
+![Alt text](Images/MKRandAntenna.png)<br>
 Simple circuit of the board and antenna.
 
 Make sure to update the firmware of the LoRa module to the latest version.

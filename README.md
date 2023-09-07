@@ -8,8 +8,7 @@ Welcome to the documentation for setting up a LoRaWAN end device with a gateway 
 2. [Components](#components)
 3. [Prerequisites](#prerequisites)
 4. [Setting Up the Gateway](#setting-up-the-gateway)
-5. [Configuring the Server](#configuring-the-server)
-6. [Programming the End Device](#programming-the-end-device)
+5. [Programming the End Device](#programming-the-end-device)
 7. [Troubleshooting](#troubleshooting)
 8. [Resources](#resources)
 9. [Contributing](#contributing)
@@ -38,13 +37,13 @@ This project involves the following components:
     <br>
     
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.<br>
-SenseCap Gateway:<br>
+SenseCap Gateway:
     ![SenseCap Gateway](<SenseCap Gateway.jpeg>)
     Arch-Specs:
     ![Alt text](GatewayArchSpec.png)
     
 - **Backend Server:** The server that receives data from the gateways, processes it, and makes it available for further analysis.
-![Alt text](../thingsNetworkServer.png)
+![Alt text](thingsNetworkServer.png)
 
 ## Prerequisites
 

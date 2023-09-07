@@ -79,7 +79,7 @@ Procedure:
 
         File -> Examples -> MKRWAN -> FirstConfiguration
 
-    **Considering: Board = SAMD; has been installed and selected.*<br>
+    **Considering: Board = SAMD; has been installed and selected*<br>
   4. **Configure TTN:** <br>
         - Create an application in the things network.
         - Then register your end device.

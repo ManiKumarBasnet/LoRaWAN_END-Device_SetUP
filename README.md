@@ -38,7 +38,7 @@ This project involves the following components:
     <br>
     
 - **Gateway:** An intermediate device that receives data from end devices and forwards it to the backend server.<br>
-SenseCap Gateway:
+SenseCap Gateway:<br>
     ![SenseCap Gateway](<SenseCap Gateway.jpeg>)
     Arch-Specs:
     ![Alt text](GatewayArchSpec.png)

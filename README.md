@@ -73,8 +73,8 @@ Procedure:
 1. **Install the core for MKR WAN board:** The core/board provides access to the hardware features of the microcontroller. The MKR WAN 1300 uses the  **SAMD core**.
 2. **Install Libraries:** Libraries allow to extend the functionality of a sketch. Install the following libraries:
    - MKRWAN - For LoRaWAN network access.
-   - Arduino Low Power - For low power capability access.<br>
-<br>
+   - Arduino Low Power - For low power capability access.<br><br>
+
 3. **Device EUI:** To configure with the things network network, from the device the requirement is Dev EUI and to obtain it upload the code:
 
         File -> Examples -> MKRWAN -> FirstConfiguration

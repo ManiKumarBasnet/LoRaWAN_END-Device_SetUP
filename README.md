@@ -10,9 +10,6 @@ Welcome to the documentation for setting up a LoRaWAN end device with a gateway 
 4. [Setting Up the Gateway](#setting-up-the-gateway)
 5. [Programming the End Device](#programming-the-end-device)
 7. [Troubleshooting](#troubleshooting)
-8. [Resources](#resources)
-9. [Contributing](#contributing)
-10. [License](#license)
 
 ## Introduction to LoRaWAN
 
@@ -90,10 +87,3 @@ Procedure:
 - **Server Issues:** Verify server configuration, check logs for error messages, and ensure the server is receiving data from the gateway.
 - **End Device Issues:** Double-check end device settings, verify wiring, and review the code for any programming errors.
 
-## Contributing
-
-If you'd like to contribute to this project, feel free to submit pull requests or raise issues in the GitHub repository.
-
----
-
-Feel free to customize this README template according to your project's specific details. Providing clear and concise instructions will help others understand and use your LoRaWAN end device configuration with gateway and server effectively. Good luck with your project!
